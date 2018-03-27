@@ -1,0 +1,30 @@
+.main-nav {
+  text-align: center;
+}
+
+.main-nav__item {
+  padding: 7px 0;
+}
+
+.main-nav__item {
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #0b4ae9;
+  border-bottom: 1px solid #000000;
+}
+
+.main-nav__link {
+  font-family: $font-2;
+  color: $text-color-2;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.main-nav__link:active {
+  opacity: 0.5;
+}
+
+.main-nav--nojs {
+  display: block;
+}

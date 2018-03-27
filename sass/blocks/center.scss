@@ -1,0 +1,10 @@
+.center {
+  max-width: 425px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .center {
+    max-width: 1024px;
+  }
+}

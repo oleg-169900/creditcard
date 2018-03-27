@@ -1,0 +1,24 @@
+.page-section__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page-section__title {
+  width: 100%;
+
+  text-align: center;
+  font-family: $font-2;
+  color: $text-color-1;
+  text-transform: uppercase;
+}
+
+.page-section__subtitle {
+  width: 100%;
+  order: -1;
+
+  text-align: center;
+  font-family: $font-2;
+  color: $text-color-3;
+  text-transform: uppercase;
+}

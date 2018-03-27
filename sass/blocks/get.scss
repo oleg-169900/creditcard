@@ -1,0 +1,47 @@
+.get {
+  padding: 30px 0;
+  background: $bg-2;
+}
+
+.get__item {
+  width: 240px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.get__item:hover {
+  background-image: $bg-1;
+  cursor: pointer;
+
+  .get__title,
+  .get__text {
+    color: $text-color-2;
+  }
+}
+
+.get__title {
+  font-family: $font-2;
+  text-transform: uppercase;
+}
+
+.get__text {
+  font-family: $font-1;
+  color: $text-color-3;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .get__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .get__item {
+    margin: 20px;
+  }
+}

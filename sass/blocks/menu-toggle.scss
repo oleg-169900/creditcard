@@ -1,0 +1,59 @@
+.menu-toggle::before {
+  content: "";
+
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 1px;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #f5f5f5;
+  box-shadow: 0 8px 0 0 #f5f5f5, 0 16px 0 0 #f5f5f5;
+}
+
+.menu-toggle--close {
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 15px;
+    left: 1px;
+
+    width: 28px;
+    height: 1px;
+
+    background-color: #f5f5f5;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.menu-toggle {
+  position: absolute;
+  z-index: 1000;
+  top: 27px;
+  right: 15px;
+
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+  border: none;
+}
+
+.menu-toggle:focus {
+  border: none;
+  outline: none;
+}

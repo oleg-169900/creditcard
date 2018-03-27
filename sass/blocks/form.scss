@@ -1,0 +1,35 @@
+.form {
+  padding: 30px 20px;
+  font-family: $font-1;
+}
+
+.form__title {
+  margin-bottom: 20px;
+  text-align: center;
+  color: $text-color-1;
+}
+
+.form__text {
+  display: block;
+  width: 92%;
+  margin: 10px 0;
+  padding: 10px;
+
+  border: 1px solid #cccccc;
+}
+
+.form__text--textarea {
+  font-family: $font-1;
+  color: $text-color-3;
+}
+
+.form__submit {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+
+  font-family: $font-2;
+  color: $text-color-2;
+
+  background: $text-color-4;
+}
