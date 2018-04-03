@@ -8,3 +8,9 @@
     max-width: 1024px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .center {
+    max-width: 1170px;
+  }
+}

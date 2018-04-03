@@ -3,10 +3,6 @@
 }
 
 .main-nav__item {
-  padding: 7px 0;
-}
-
-.main-nav__item {
   padding: 10px 0;
   text-align: center;
   border-top: 1px solid #0b4ae9;
@@ -27,4 +23,36 @@
 
 .main-nav--nojs {
   display: block;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: block;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    min-width: 130px;
+    margin: 0 20px;
+    padding: 5px 0;
+    border: none;
+  }
+
+  .main-nav__link {
+    font-size: 14px;
+  }
+
+  .main-nav__item:hover {
+    background-color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+
+    .main-nav__link {
+      color: #0b4bec;
+      text-transform: none;
+    }
+  }
 }

@@ -1,3 +1,11 @@
 .page-header {
   background-image: $bg-1;
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

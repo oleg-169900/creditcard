@@ -10,6 +10,7 @@
   font-family: $font-2;
   font-size: 26px;
   line-height: 32px;
+  text-transform: capitalize;
 }
 
 .page-heading__text {
@@ -53,11 +54,68 @@
   margin: 0 auto;
 }
 
-.page-heading__img--mobile::after {
+.page-heading__img::after {
   content: "";
   display: block;
   width: 280px;
   height: 75px;
-  background: url("../img/card-1-reflection.png") no-repeat bottom;
-  background-size: contain;
+
+  background: url("../img/card-reflection.png") no-repeat bottom;
+  background-size: cover;
+}
+
+@media (min-width: $desktop-width) {
+  .page-heading {
+    padding-top: 150px;
+    background: url("../img/shape1.png") 250px 260px,
+                url("../img/shape2.png") 350px 350px,
+                url("../img/shape3.png") 300px 450px,
+                url("../img/shape4.png") 200px 380px,
+                url("../img/rect.png") 1500px 200px,
+                url("../img/rect.png") 1470px 130px,
+                $bg-1;
+    background-repeat: no-repeat;
+  }
+
+  .page-heading__title {
+    font-size: 40px;
+  }
+
+  .page-heading__btn {
+    margin: 60px auto;
+    padding: 15px 45px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .page-heading__img-field {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 120px;
+  }
+
+  .page-heading__img {
+    position: relative;
+    display: block;
+    margin-top: 50px;
+    opacity: 0.6;
+  }
+
+  .page-heading__img--mobile {
+    z-index: 100;
+    width: 570px;
+    margin: 0 -50px;
+    opacity: 1;
+  }
+
+  .page-heading__img::after {
+    width: 410px;
+    height: 50px;
+  }
+
+  .page-heading__img--mobile::after {
+    width: 570px;
+    height: 150px;
+  }
 }
