@@ -83,3 +83,23 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .benefits {
+    align-content: flex-start;
+    width: 50%;
+  }
+
+  .benefits__list {
+    display: block;
+    padding-left: 115px;
+  }
+
+  .benefits__item {
+    width: 480px;
+  }
+
+  .benefits__title {
+    border-bottom: 1px solid #bfbfbf;
+  }
+}

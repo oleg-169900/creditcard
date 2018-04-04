@@ -25,11 +25,21 @@
 
 
 @media (min-width: $desktop-width) {
+  .services {
+    padding-top: 200px;
+    border: none;
+  }
+
   .services__inner {
     width: 1140px;
   }
 
   .services__item {
     width: 270px;
+  }
+
+  .services__text {
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
