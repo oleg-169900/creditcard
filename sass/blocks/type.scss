@@ -1,11 +1,7 @@
 .type {
+  position: relative;
   padding: 30px 0;
   border-top: 1px solid #b3b3b3;
-}
-
-.type__list {
-  display: flex;
-  overflow-x: scroll;
 }
 
 .type__inner {
@@ -21,6 +17,6 @@
 
 @media (min-width: $tablet-width) {
   .type__inner {
-    width: 90%;
+    width: 1130px;
   }
 }

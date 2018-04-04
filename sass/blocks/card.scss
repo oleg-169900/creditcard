@@ -58,3 +58,10 @@
 .card__btn:active {
   opacity: 0.3;
 }
+
+
+@media (min-width: $desktop-width) {
+  .card {
+    width: 550px;
+  }
+}
