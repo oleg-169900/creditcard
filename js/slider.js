@@ -12,13 +12,19 @@
     var typeArrowRight = document.querySelector(".type__inner  .slider__arrow--right");
 
     var widthServicesItem = 270;
-    var widthTypeItem = 550;
+    var widthTypeItem = 560;
 
     var units = "px";
     var position = 0;
     var countServicesItem = 4;
     var countTypeItem = 3;
 
+    var noJS = document.querySelectorAll(".slider__nojs");
+
+
+    for (var i = 0; i < noJS.length; i++) {
+      noJS[i].classList.remove("slider__nojs");
+    }
 
     servicesArrowLeft.onclick = function() {
       position = Math.min(position + widthServicesItem * countServicesItem, 0)
