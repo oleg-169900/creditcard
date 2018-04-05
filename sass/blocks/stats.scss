@@ -58,3 +58,38 @@
   font-size: 12px;
   text-transform: capitalize;
 }
+
+@media (min-width: $desktop-width) {
+  .stats {
+    padding: 70px 0;
+  }
+
+  .stats__item {
+    flex-grow: 1;
+  }
+
+  .stats__count {
+    font-size: 40px;
+  }
+
+  .stats__text {
+    font-size: 26px;
+  }
+
+  .stats__item::before {
+    width: 70px;
+    height: 65px;
+  }
+
+  .stats__item--likes.stats__item::before {
+    background-position: -80px 0;
+  }
+
+  .stats__item--pay.stats__item::before {
+    background-position: -165px 0;
+  }
+
+  .stats__item--feedback.stats__item::before {
+    background-position: -240px 0;
+  }
+}

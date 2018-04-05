@@ -3,6 +3,11 @@
   font-family: $font-1;
 }
 
+.form__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .form__title {
   margin-bottom: 20px;
   text-align: center;
@@ -11,7 +16,7 @@
 
 .form__text {
   display: block;
-  width: 92%;
+  width: 100%;
   margin: 10px 0;
   padding: 10px;
 
@@ -32,4 +37,48 @@
   color: $text-color-2;
 
   background: $text-color-4;
+
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  opacity: 0.5;
+}
+
+.form__submit:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding: 100px 0;
+  }
+
+  .form__inner {
+    flex-direction: column;
+  }
+
+  .form__title {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .form__text {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .form__text--textarea {
+    align-self: flex-end;
+    height: 110px;
+    margin-top: -232px;
+  }
+
+  .form__submit {
+    align-self: flex-end;
+    width: 47.7%;
+    padding: 15px 0;
+  }
 }

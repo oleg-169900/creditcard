@@ -23,6 +23,11 @@
   font-weight: bold;
 }
 
+@media (min-width: $tablet-width) {
+  .services__inner {
+    width: 540px;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .services {
@@ -32,6 +37,7 @@
 
   .services__inner {
     width: 1140px;
+    margin-top: 70px;
   }
 
   .services__item {

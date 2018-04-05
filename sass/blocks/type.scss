@@ -17,6 +17,18 @@
 
 @media (min-width: $tablet-width) {
   .type__inner {
+    width: 600px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type {
+    padding-top: 130px;
+    border: none;
+  }
+
+  .type__inner {
     width: 1130px;
+    margin-top: 70px;
   }
 }

@@ -1,3 +1,7 @@
+.slider {
+  overflow-x: scroll;
+}
+
 .slider__arrow {
   display: none;
 }
@@ -5,7 +9,6 @@
 .slider__list {
   display: flex;
   justify-content: flex-start;
-  overflow-x: scroll;
   transition-duration: 1s;
 }
 
@@ -14,23 +17,23 @@
     overflow-x: hidden;
   }
 
-  .slider__list {
-    overflow-x: hidden;
-  }
-
   .slider__arrow {
     position: absolute;
+    top: 65%;
     display: inline-block;
     cursor: pointer;
   }
 
   .slider__arrow--left {
-    top: 60%;
     left: 2%;
   }
 
   .slider__arrow--right {
-    top: 60%;
     right: 2%;
+  }
+
+  .slider__nojs {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

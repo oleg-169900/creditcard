@@ -63,5 +63,33 @@
 @media (min-width: $desktop-width) {
   .card {
     width: 550px;
+    margin: 10px;
+  }
+
+  .card__text-field {
+    padding: 0 10px;
+    padding-top: 40px;
+  }
+
+  .card__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .card__list {
+    padding: 10px 0;
+    padding-bottom: 50px;
+  }
+
+  .card__item {
+    width: 170px;
+    padding: 10px 0;
+    flex-grow: 1;
+    border: 1px solid #b2b2b2;
+    border-left: none;
+  }
+
+  .card__item:last-child {
+    border-right: none;
   }
 }
