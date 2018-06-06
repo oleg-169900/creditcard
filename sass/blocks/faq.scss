@@ -6,6 +6,7 @@
 }
 
 .faq__list {
+  width: 100%;
   margin-top: 20px;
 }
 
@@ -29,6 +30,34 @@
   margin: 10px 0;
   text-align: center;
   font-weight: bold;
+}
+
+.faq__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq__toggle {
+  width: 6px;
+  height: 6px;
+  margin: 2px;
+
+  border: 2px solid #878787;
+  border-bottom: none;
+  border-left: none;
+
+  transform: rotate(45deg);
+
+  cursor: pointer;
+}
+
+.faq__toggle--rotate {
+  transform: rotate(135deg);
+}
+
+.faq__text--nojs {
+  display: block;
 }
 
 @media (min-width: $desktop-width) {
